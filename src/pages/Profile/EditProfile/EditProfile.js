@@ -57,7 +57,6 @@ function EditChild({dob , setDob}){
               onChange={e => setDob(e.target.value)}
             />
             <Button className='e-button' onClick={() => { setOpen(false); }}>Cancel</Button>
-            <Button >Save</Button>
           </div>
         </Box>
       </Modal>
