@@ -82,10 +82,11 @@ input {
 
 .btn-login {
     padding: 7px;
-    cursor: pointer;
 }
 
-
+.btn-login:hover{
+    cursor: pointer;
+}
 .btn {
     background-color: rgb(92, 199, 241);
     width: 75%;
