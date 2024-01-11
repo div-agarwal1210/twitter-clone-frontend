@@ -29,7 +29,6 @@ function Login() {
         navigate('/');
     }
     if (error) {
-        console.log(error);
         if(toasts)
         {
         toast.error("Invalid Credentials");
