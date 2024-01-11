@@ -80,14 +80,7 @@ input {
     outline: none;
 }
 
-.btn-login {
-    padding: 7px;
-    cursor: pointer;
-}
 
-.btn-login:hover{
-    cursor: pointer;
-}
 .btn {
     background-color: rgb(92, 199, 241);
     width: 75%;
@@ -99,6 +92,7 @@ input {
     outline: none;
     margin-bottom: 20px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .g-btn {
