@@ -82,7 +82,9 @@ input {
 
 .btn-login {
     padding: 7px;
+    cursor: pointer;
 }
+
 
 .btn {
     background-color: rgb(92, 199, 241);
