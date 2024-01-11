@@ -7,11 +7,13 @@ import GoogleButton from 'react-google-button'
 import { Link, useNavigate } from 'react-router-dom';
 import "./Login.css"
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import toast from "react-hot-toast";
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     //const [error ,setError] = useState('');
+    const [toasts ,setToasts]=useState(true);
     const navigate = useNavigate();
 
     const [
@@ -28,6 +30,11 @@ function Login() {
     }
     if (error) {
         console.log(error);
+        if(toasts)
+        {
+        toast.error("Invalid Credentials");
+        setToasts(false);
+        }
     }
     if (loading) {
         console.log("loading...");
@@ -35,6 +42,7 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(email, password);
+        setToasts(true);
     }
     const handleGoogleSignIn = () => {
         signInWithGoogle();
