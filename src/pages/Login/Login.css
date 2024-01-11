@@ -82,6 +82,7 @@ input {
 
 .btn-login {
     padding: 7px;
+    cursor: pointer;
 }
 
 .btn-login:hover{
