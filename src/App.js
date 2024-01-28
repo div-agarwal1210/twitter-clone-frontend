@@ -13,6 +13,7 @@ import Bookmarks from './pages/Bookmarks/Bookmarks'
 import List from './pages/List/List'
 import Profile from './pages/Profile/Profile'
 import More from './pages/More/More'
+import VerificationBadge from './pages/VerificationBadge/VerificationBadge';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute>}>
             <Route index element={<Feed/>}/>
+            <Route path='/badge' element={<VerificationBadge/>}/>
           </Route>
           <Route path='/home' element={<ProtectedRoute><Home/></ProtectedRoute>}>
             <Route path='feed' element={<Feed/>} />
@@ -34,6 +36,7 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/page-loading' element={<PageLoading/>} />
+          
         </Routes>
       </BrowserRouter>
           </div>

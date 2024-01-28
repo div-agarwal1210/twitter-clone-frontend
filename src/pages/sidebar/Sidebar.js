@@ -106,7 +106,7 @@ function Sidebar({handleLogout , user}) {
                         </MenuItem>
                         <Divider/>
                         <MenuItem onClick={handleClose}>Add an existing account</MenuItem>
-                        <MenuItem onClick={handleLogout}>Log out @agarwal</MenuItem>
+                        <MenuItem onClick={handleLogout}>Log out @{result}</MenuItem>
                     </Menu>
         </div>
     </div>

@@ -7,8 +7,10 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PublishIcon from "@mui/icons-material/Publish";
 
 
+
 function Post({ p }) {
- const { name, username, photo, post, profilePhoto } = p;
+ const { name, username, photo, post, profilePhoto, badge } = p;
+
   return (
     <div className="post">
       <div className="post__avatar">
@@ -19,7 +21,7 @@ function Post({ p }) {
           <div className="post__headerText">
             <h3>{name}{" "}
               <span className="post__headerSpecial">
-                <VerifiedIcon className="post__badge" /> @{username}
+                {badge === true ? <VerifiedIcon className="post__badge" />:null} @{username}
               </span>
             </h3>
           </div>

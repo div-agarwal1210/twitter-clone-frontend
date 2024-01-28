@@ -15,6 +15,7 @@ function TweetBox() {
   const [name, setName] = useState('');
   const [username, setUsername] = useState(' ');
   const [loggedInUser] = UseLoggedInUser();
+  const [badge,setBadge]=useState(false)
   //console.log(loggedInUser);
   const [ user ] = useAuthState(auth);
     const email = user?.email;
@@ -51,6 +52,7 @@ function TweetBox() {
             //console.log('from useLoggedinuser', data)
             setName(data[0]?.name)
             setUsername(data[0]?.username)
+            setBadge(data[0]?.badge)
         })
        }
        else{
@@ -65,7 +67,8 @@ function TweetBox() {
       username:username,
       name:name,
       user:user,
-      email:email
+      email:email,
+      badge:badge
       
     }
   

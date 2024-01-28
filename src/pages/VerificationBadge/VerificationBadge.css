@@ -1,0 +1,57 @@
+.verifyImage{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid var(--twitter-color);
+}
+
+.profession
+{
+    background-color: #E8F0FE;
+    width: 55%;
+    border-radius: 8px;
+    padding: 14px;
+    border: none;
+    outline: none;
+}
+
+
+.login-container2 {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.form-container2 {
+    display: flex;
+    /* flex: 1; */
+    padding: 50px;
+    margin: 10px;
+    /* margin-left: -50px; */
+    align-content: center;
+}
+
+.form-box2 {
+    justify-content: center;
+    align-items: center;
+    /* grid-row: auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+.btns {
+    background-color: rgb(92, 199, 241);
+    width: 60%;
+    margin-right: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
