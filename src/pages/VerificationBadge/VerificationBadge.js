@@ -47,7 +47,7 @@ const VerificationBadge = () => {
           <div className='verifyImage'>
           <img src={loggedInUser[0]?.profileImage ? loggedInUser[0]?.profileImage : 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'} alt="" className='verifyImage' />
         </div>
-          <h2 className='heading1'>{loggedInUser[0]?.name ? loggedInUser[0].name : user && user.displayName}</h2>
+          <h2 className='heading1'>{loggedInUser[0]?.name ? loggedInUser[0]?.name : user && user.displayName}</h2>
           <h3 className='heading1'>@{username}</h3>
 
           <form onSubmit={handleSave}>
