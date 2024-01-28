@@ -11,7 +11,7 @@ const VerificationBadge = () => {
   const user = useAuthState(auth);
   const [loggedInUser] = UseLoggedInUser();
   const username = user[0]?.email?.split('@')[0];
-  console.log(loggedInUser[0].name);
+  console.log(loggedInUser[0]?.name);
   const [profession, setProfession] = useState("")
   const [description, setDescription] = useState("");
   const [badge, setBadge] = useState(false);
